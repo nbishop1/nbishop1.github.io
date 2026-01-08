@@ -100,25 +100,6 @@ body {
     color: #555;
 }
 
-/* Contact Section Resume Link */
-#contact a[download] {
-    display: inline-block;
-    background: #667eea;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    transition: all 0.3s ease;
-    font-weight: bold;
-}
-
-#contact a[download]:hover {
-    background: #764ba2;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
 /* Skills Section Styling */
 .skills-container {
     display: grid;
@@ -237,32 +218,6 @@ body {
 }
 
 /* Projects Section Styling */
-.projects-filter {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-}
-
-.filter-btn {
-    background: transparent;
-    border: 2px solid #667eea;
-    color: #667eea;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-    background: #667eea;
-    color: white;
-    transform: translateY(-2px);
-}
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -379,34 +334,10 @@ body {
     transform: translateY(-2px);
 }
 
-.demo-link {
-    background: #667eea;
-    color: white;
-}
-
-.demo-link:hover {
-    background: #764ba2;
-    transform: translateY(-2px);
-}
-
-.github-icon,
-.demo-icon {
+.github-icon {
     width: 16px;
     height: 16px;
     fill: currentColor;
-}
-
-/* Project Filter Animation */
-.project-card.hidden {
-    opacity: 0;
-    transform: scale(0.8);
-    transition: all 0.3s ease;
-}
-
-.project-card.visible {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.3s ease;
 }
 
 /* Responsive Design */
@@ -435,11 +366,6 @@ body {
     .project-links {
         flex-direction: column;
         gap: 0.75rem;
-    }
-
-    .filter-btn {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.9rem;
     }
 }
 
