@@ -1,1 +1,1 @@
-<p align="center"> # Natalee Bishop's Digital Portfolio</p>
+<p align="center"> Natalee Bishop's Digital Portfolio</p>
