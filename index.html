@@ -1,11 +1,244 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <h1 class="title">Natalee Bishop's Digital Portfolio</h1>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1 class="title">Natalee Bishop</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="resume/Natalee_Bishop_Resume.pdf" class="resume-btn" target="_blank" download>Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <h2>Digital Portfolio</h2>
+            <p>Welcome to my professional portfolio</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am from Ogden, Utah and have lived in the area for all my life.
+                I have always excelled when it comes to technology and
+                problem-solving. If I were to describe myself in one word I would
+                say people-person. I love working with others and helping them
+                achieve their goals. In my free time I enjoy playing video games,
+                doing my nails, and spending time with my family.
+            </p>
+            <p>My professional goal is to become a software engineer. I want to
+                work for a company that allows me to grow my skills and work on
+                exciting projects. I am passionate about technology and I want
+                to use my skills to make a positive impact in the world.
+            </p>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <video class="project-video" controls poster="demoTNs/HitPartnerTN.png">
+                            <source src="demos/HitPartnerDemo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Hit, Partner</h3>
+                        <p class="project-description">
+                            A survival game based on the classic "Oregon Trail" where the casino game
+                            Blackjack is played to get money for supplies.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">GUI</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/nbishop1/CS3250FinalProject.git"
+                                class="project-link github-link" target="_blank">
+                                <svg class="github-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <video class="project-video" controls poster="demoTNs/SpeedGameTN.png">
+                            <source src="demos/SpeedGameDemo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Speed Card Game</h3>
+                        <p class="project-description">
+                            A digital version of the classic two-player card game "Speed" where players from
+                            multiple browsers can compete in real-time.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/nbishop1/TeamCookedProject4.git"
+                                class="project-link github-link" target="_blank">
+                                <svg class="github-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag primary">JavaScript</span>
+                        <span class="skill-tag primary">Python</span>
+                        <span class="skill-tag primary">C++</span>
+                        <span class="skill-tag primary">Java</span>
+                        <span class="skill-tag primary">C#</span>
+                        <span class="skill-tag primary">C</span>
+                        <span class="skill-tag primary">SQL</span>
+                        <span class="skill-tag primary">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">Frameworks & Technologies</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag secondary">MERN Stack</span>
+                        <span class="skill-tag secondary">React</span>
+                        <span class="skill-tag secondary">Node.js</span>
+                        <span class="skill-tag secondary">Express</span>
+                        <span class="skill-tag secondary">ASP.NET</span>
+                        <span class="skill-tag secondary">MongoDB</span>
+                        <span class="skill-tag secondary">Microsoft SQL Server</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">Development Tools</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag accent">Visual Studio Code</span>
+                        <span class="skill-tag accent">Visual Studio 2022</span>
+                        <span class="skill-tag accent">Git & GitHub</span>
+                        <span class="skill-tag accent">Eclipse</span>
+                        <span class="skill-tag accent">SQL Server Management Studio</span>
+                        <span class="skill-tag accent">Command Line/Terminal</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">Software Engineering</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag professional">Object-Oriented Programming</span>
+                        <span class="skill-tag professional">Agile Development</span>
+                        <span class="skill-tag professional">Version Control</span>
+                        <span class="skill-tag professional">Server-Side Architecture</span>
+                        <span class="skill-tag professional">Database Programming</span>
+                        <span class="skill-tag professional">Software Testing</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">Security & Systems</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag security">Computer Security</span>
+                        <span class="skill-tag security">User Authentication</span>
+                        <span class="skill-tag security">PCI Compliance</span>
+                        <span class="skill-tag security">Secure Testing</span>
+                        <span class="skill-tag security">System Troubleshooting</span>
+                        <span class="skill-tag security">Remote Access Tools</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <a href="mailto:bishopna1209@gmail.com">bishopna1209@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/natalee-bishop-ab7964357/"
+                                target="_blank">linkedin.com/in/natalee-bishop-ab7964357/</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/nbishop1" target="_blank">github.com/nbishop1</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-download-section">
+                    <p><a href="resume/Natalee_Bishop_Resume.pdf" target="_blank" download
+                            class="resume-download-btn">Download My Resume</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
