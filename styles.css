@@ -113,6 +113,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     border: 1px solid #e5e7eb;
+    border-left: 6px solid #667eea;
     transition: transform 0.3s ease;
 }
 
@@ -142,6 +143,54 @@ body {
     border-radius: 2px;
 }
 
+.skills-category:nth-child(1) {
+    border-left-color: #2563eb;
+}
+
+.skills-category:nth-child(1) .category-title::after {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.skills-category:nth-child(2) {
+    border-left-color: #d946ef;
+}
+
+.skills-category:nth-child(2) .category-title::after {
+    background: linear-gradient(135deg, #d946ef, #a21caf);
+}
+
+.skills-category:nth-child(3) {
+    border-left-color: #0d9488;
+}
+
+.skills-category:nth-child(3) .category-title::after {
+    background: linear-gradient(135deg, #14b8a6, #0f766e);
+}
+
+.skills-category:nth-child(4) {
+    border-left-color: #f97316;
+}
+
+.skills-category:nth-child(4) .category-title::after {
+    background: linear-gradient(135deg, #f97316, #c2410c);
+}
+
+.skills-category:nth-child(5) {
+    border-left-color: #22c55e;
+}
+
+.skills-category:nth-child(5) .category-title::after {
+    background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+.skills-category:nth-child(6) {
+    border-left-color: #ef4444;
+}
+
+.skills-category:nth-child(6) .category-title::after {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -169,52 +218,52 @@ body {
 
 /* Programming Languages - Blue Theme */
 .skill-tag.primary {
-    background: linear-gradient(135deg, #4c63d2 0%, #667eea 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     color: white;
 }
 
 .skill-tag.primary:hover {
-    background: linear-gradient(135deg, #3b4db8 0%, #4c63d2 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
 }
 
-/* Frameworks - Purple Theme */
+/* Web Technologies - Magenta Theme */
 .skill-tag.secondary {
-    background: linear-gradient(135deg, #764ba2 0%, #9561e2 100%);
+    background: linear-gradient(135deg, #d946ef 0%, #a21caf 100%);
     color: white;
 }
 
 .skill-tag.secondary:hover {
-    background: linear-gradient(135deg, #5a3785 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #a21caf 0%, #86198f 100%);
 }
 
-/* Development Tools - Teal Theme */
+/* Tools - Orange Theme */
 .skill-tag.accent {
-    background: linear-gradient(135deg, #4ecdc4 0%, #38b2ac 100%);
+    background: linear-gradient(135deg, #f97316 0%, #c2410c 100%);
     color: white;
 }
 
 .skill-tag.accent:hover {
-    background: linear-gradient(135deg, #319795 0%, #2c7a7b 100%);
+    background: linear-gradient(135deg, #ea580c 0%, #9a3412 100%);
 }
 
-/* Software Engineering - Green Theme */
+/* Environments - Green Theme */
 .skill-tag.professional {
-    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    background: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
     color: white;
 }
 
 .skill-tag.professional:hover {
-    background: linear-gradient(135deg, #2f855a 0%, #276749 100%);
+    background: linear-gradient(135deg, #16a34a 0%, #166534 100%);
 }
 
-/* Security - Orange Theme */
+/* Operating Systems - Red Theme */
 .skill-tag.security {
-    background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
+    background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
     color: white;
 }
 
 .skill-tag.security:hover {
-    background: linear-gradient(135deg, #c05621 0%, #9c4221 100%);
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
 }
 
 /* Projects Section Styling */
